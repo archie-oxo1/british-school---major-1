@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teacher Feedback Form</title>
+    <link rel="stylesheet" href="./css/feedback.css">
+    
+</head>
+<body>
+
+  <div class="feedback-container">
+    <h2>Student Feedback Form</h2>
+
+    <form id="feedbackForm">
+      <label for="studentName">Your Name</label>
+      <input type="text" id="studentName" placeholder="Enter your name">
+
+      <label for="teacherName">Teacher</label>
+      <input type="text" id="teacherName" value="Mr. Jonathan Pitt" readonly>
+
+      <label for="rating">Rating</label>
+      <select id="rating" required>
+        <option value="">Select rating</option>
+        <option value="5">Excellent (5)</option>
+        <option value="4">Good (4)</option>
+        <option value="3">Average (3)</option>
+        <option value="2">Poor (2)</option>
+        <option value="1">Very Poor (1)</option>
+      </select>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments" placeholder="Write your feedback here..."></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <div class="thank-you" id="thankYouMessage">
+      🎉 Thank you for your feedback!
+    </div>
+  </div>
+  <script src="./js/feedback.js"></script>
+</body>
+</html>
